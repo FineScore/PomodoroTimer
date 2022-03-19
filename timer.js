@@ -1,5 +1,3 @@
-function() {
-    let timeSec = 25;
+const start = document.querySelector('.startBtn');
+start.addEventListener('click', pomodoroCount);
 
-    element = document.querySelector('#time-countdown');
-}

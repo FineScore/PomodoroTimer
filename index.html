@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뽀모도로 타이머</title>
     <link rel="stylesheet" href="style.css">
-    <script src="timer.js"></script>
+    
 </head>
 <body>
     <div class="page">
@@ -15,28 +15,29 @@
             <h1>Pomodoro Timer</h1>
         </header>
         <main>
-            <div id="time-countdown"></div>
-            <div>시간(분)
+            <div><span id="time">25:00</div>
+            <div><span>시간(분)</span>
                 <div>
-                    뽀모도로
+                    <span>뽀모도로</span>
                     <input id="changeMain" type="text">
                 </div>
                 <div>
-                    짧은 휴식
+                    <span>짧은 휴식</span>
                     <input id="changeShort" type="text">
                 </div>
                 <div>
-                    긴 휴식
+                    <span>긴 휴식</span>
                     <input id="changeLong" type="text">
                 </div>
             </div>
             <div>
-                볼륨
+                <span>볼륨</span>
                 <input type="range" id="sound">
             </div>
-            <button>시작</button>
+            <input type="button" class="startBtn" value="start">
         </main>
     </div>
 
 </body>
+<script src="timer.js"></script>
 </html>
